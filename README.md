@@ -1,4 +1,4 @@
-# Chon Has Space
+# Chon's ads
 
 A playful React and Vite demo for reserving fictional advertising space on Chon's cone and harness.
 
