@@ -1,35 +1,36 @@
-# Chon tiene espacio
+# Chon Has Space
 
-Demo web simple de una venta ficticia de espacios publicitarios en el cono y la pechera de Chon.
+A playful React and Vite demo for reserving fictional advertising space on Chon's cone and harness.
 
-## Estado real
+## Current state
 
-- Es una aplicación frontend hecha con React y Vite.
-- No tiene backend, base de datos, persistencia ni analytics.
-- No procesa pagos reales.
-- El botón `Pagar con Mercado Pago` abre el aviso final de la demo y no contacta a Mercado Pago.
-- Los archivos elegidos se usan sólo para previsualizar el sticker en el navegador.
+- Frontend-only application built with React and Vite.
+- No backend, database, analytics, or server-side persistence.
+- No real payments are processed.
+- The `Pay with Mercado Pago` button opens the demo notice and does not contact Mercado Pago.
+- Uploaded files are used only for local sticker previews in the browser.
+- The interface supports Spanish and English, detects the browser language on first visit, and remembers manual language changes.
 
-## Desarrollo
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Para crear y verificar el build:
+Build and verify the production output:
 
 ```bash
 npm run build
 npm run verify
 ```
 
-## Estructura
+## Project structure
 
-- `src/`: aplicación React y estilos.
-- `public/`: favicon, video, foto de Chon y ocho vistas del selector.
-- `scripts/verify-production.mjs`: verificación básica del build.
+- `src/`: React application, translations, and styles.
+- `public/`: favicon, video, Chon photo, and the eight selector views.
+- `scripts/verify-production.mjs`: basic production-build verification.
 
-## Licencia y autoría
+## License and authorship
 
-Proyecto personal de Lucas Malizia.
+Personal project by Lucas Malizia.
