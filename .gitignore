@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local audit, browser and generated artifacts
+.playwright-cli/
+output/
+**/__pycache__/
+*.py[cod]
+
+# Blender and source assets are intentionally outside this web-only repo
+.tools/
+source-assets/
+*.blend
+*.blend1
+*.glb
+scripts/create_chon_blender_scene.py
+scripts/create_chon_static_likeness.py
+scripts/probe_blender_context.py
+scripts/run_chon_static_via_blender_mcp.py
+scripts/run_chon_via_blender_mcp.py
+
+# macOS
+.DS_Store
