@@ -20,6 +20,23 @@ if (!existsSync(join(distDir, 'index.html'))) {
   errors.push('No se encontró dist/index.html. Ejecutá npm run build antes de verificar.')
 } else {
   const outputFiles = walk(distDir)
+  const indexText = readFileSync(join(distDir, 'index.html'), 'utf8')
+  const requiredFiles = ['404.html', 'og-card.svg', 'assets/chon-404.svg']
+  for (const file of requiredFiles) {
+    if (!existsSync(join(distDir, file))) errors.push(`Falta en dist el archivo público requerido: /${file}`)
+  }
+
+  const requiredMeta = [
+    'rel="canonical" href="https://dog-ads.vercel.app/"',
+    'property="og:image" content="https://dog-ads.vercel.app/og-card.svg"',
+    'property="og:image:width" content="1200"',
+    'property="og:image:height" content="630"',
+    'name="twitter:card" content="summary_large_image"',
+  ]
+  for (const meta of requiredMeta) {
+    if (!indexText.includes(meta)) errors.push(`Falta en index.html el metadato social: ${meta}`)
+  }
+
   const forbidden = outputFiles.filter((path) => /\.(blend1?|glb)$/i.test(path))
 
   if (forbidden.length > 0) {

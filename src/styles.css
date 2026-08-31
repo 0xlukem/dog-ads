@@ -39,8 +39,6 @@ a { color: inherit; text-decoration: none; }
 .noise { position: fixed; inset: 0; z-index: 5; pointer-events: none; opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); }
 .section-shell { width: min(1200px, calc(100% - 56px)); margin: 0 auto; }
 .section { position: relative; }
-.eyebrow { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--accent-dark); font: 500 11px/1.2 'DM Mono', monospace; letter-spacing: .11em; text-transform: uppercase; }
-.eyebrow--live::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(213,103,63,.14); }
 .section-intro { max-width: 650px; }
 .section-intro h2 { margin: 14px 0 0; max-width: 680px; font-size: clamp(2.3rem, 4.6vw, 4.6rem); line-height: .96; letter-spacing: -.065em; font-weight: 600; }
 .section-intro__body { max-width: 560px; margin: 22px 0 0; color: var(--muted); font-size: 16px; line-height: 1.6; }
@@ -292,9 +290,8 @@ a { color: inherit; text-decoration: none; }
 .form-error { margin: 0 0 15px; padding: 10px; border-left: 2px solid var(--accent); color: var(--accent-dark); background: #f6e5d9; font-size: 12px; line-height: 1.4; }
 .success-state { justify-content: center; align-items: flex-start; }
 .success-state__icon { display: grid; place-items: center; width: 48px; height: 48px; color: #fff7ed; background: var(--accent); border-radius: 50%; }
-.success-state .eyebrow { margin-top: 28px; }
 .success-state h3 { max-width: 370px; margin: 16px 0 0; font-size: clamp(2.4rem, 5vw, 4rem); line-height: .92; letter-spacing: -.07em; }
-.success-state > p:not(.eyebrow) { max-width: 400px; margin: 20px 0 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.success-state > p { max-width: 400px; margin: 20px 0 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
 .success-state > .button { margin-top: 30px; }
 .trend-notice { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 24px; background: rgba(36,35,33,.42); animation: trend-notice-overlay-in .28s ease-out both; }
 .trend-notice__card { position: relative; width: min(100%, 430px); max-height: min(90dvh, 680px); overflow: auto; padding: 34px; border: 1px solid var(--line-strong); background: var(--paper); box-shadow: 0 24px 70px rgba(36,35,33,.22); animation: trend-notice-card-in .42s cubic-bezier(.175,.885,.32,1.275) both; }
@@ -346,9 +343,8 @@ a { color: inherit; text-decoration: none; }
 .real-photo { position: relative; transform: rotate(-2deg); }
 .real-photo img { display: block; width: 100%; max-height: 590px; object-fit: cover; filter: saturate(.8) contrast(.96); }
 .photo-stamp { position: absolute; right: 16px; bottom: 16px; padding: 7px 9px; color: #f8f0e6; background: rgba(36,35,33,.8); font: 10px 'DM Mono', monospace; text-transform: uppercase; }
-.real-copy .eyebrow { color: #e7a17e; }
 .real-copy h2 { max-width: 480px; margin: 18px 0 0; font-size: clamp(3rem, 6.5vw, 6.5rem); line-height: .86; letter-spacing: -.08em; }
-.real-copy > p:not(.eyebrow) { max-width: 440px; margin: 28px 0 0; color: rgba(244,238,229,.7); font-size: 17px; line-height: 1.6; }
+.real-copy > p { max-width: 440px; margin: 28px 0 0; color: rgba(244,238,229,.7); font-size: 17px; line-height: 1.6; }
 .real-facts { display: flex; flex-direction: column; gap: 10px; margin: 35px 0; color: rgba(244,238,229,.86); font: 11px 'DM Mono', monospace; }
 .real-facts span { display: flex; align-items: center; gap: 8px; }
 .real-copy .button--secondary { border-color: rgba(244,238,229,.35); color: #f4eee5; }
@@ -456,7 +452,7 @@ a { color: inherit; text-decoration: none; }
   .trend-notice__card .button { width: 100%; }
   .real-grid { gap: 36px; }
   .real-copy h2 { font-size: 4.3rem; }
-  .real-copy > p:not(.eyebrow) { font-size: 15px; }
+  .real-copy > p { font-size: 15px; }
   .real-copy .button { width: 100%; }
   .footer-grid { grid-template-columns: 1fr; align-items: start; }
   .footer-links { gap: 15px; }
@@ -475,9 +471,7 @@ a { color: inherit; text-decoration: none; }
 .language-toggle { justify-content: stretch; }
 .language-toggle__option { flex: 1 1 0; min-width: 0; }
 
-/* Section overlines are intentionally removed from the visual hierarchy. */
-.eyebrow,
-.trend-notice__eyebrow { display: none; }
+/* Keep the popup's single eyebrow while removing section overlines. */
 .section-intro h2,
 .real-copy h2,
 .trend-notice__card h3 { margin-top: 0; }

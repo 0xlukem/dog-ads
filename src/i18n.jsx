@@ -53,7 +53,6 @@ export const translations = {
       'harness-left': { label: 'Lateral izquierdo de la pechera', detail: 'El costado izquierdo de la pechera.', spot: 'Pechera · lateral izquierdo' },
     },
     ranking: {
-      eyebrow: 'Ranking en vivo',
       title: 'El cono ya tiene favoritos.',
       body: 'Las marcas que llegaron primero se quedaron con los lugares que Chon mira con menos desprecio.',
       occupancy: 'Ocupación',
@@ -65,7 +64,6 @@ export const translations = {
       sponsors: { croquetas: 'M · Cono frontal', paseo: 'S · Pechera frontal' },
     },
     how: {
-      eyebrow: 'Cómo funciona',
       title: 'Tres pasos. Un cono con agenda propia.',
       body: 'Tu marca, un perro convaleciente y una oportunidad comercial que nadie pidió.',
       steps: [
@@ -75,7 +73,6 @@ export const translations = {
       ],
     },
     sizes: {
-      eyebrow: 'Menú de espacios',
       title: 'Seis tamaños. Ocho lugares.',
       body: 'Elegí cuánto protagonismo puede soportar tu marca sin opacar al dueño del cono.',
       note: 'Medido con precisión. Aprobado con indiferencia.',
@@ -83,7 +80,6 @@ export const translations = {
       location: 'Ubicación',
     },
     purchase: {
-      eyebrow: 'Reservá tu lugar',
       title: 'Diseñá el anuncio que va a acompañar a Chon.',
       body: 'Cuatro pasos para ocupar una propiedad publicitaria con patas.',
       previewLabel: 'Tu marca vive acá',
@@ -112,7 +108,6 @@ export const translations = {
       stepFourTitle: 'Revisá y pagá',
       stepFourBody: 'Tu lugar está listo. Chon espera una decisión ejecutiva.',
       pay: 'Pagar con Mercado Pago',
-      successEyebrow: 'Caíste con elegancia',
       successTitle: 'El pedido nunca existió.',
       successBody: 'No hubo cobro, proceso de pago ni datos enviados. Pero tu marca le quedaba bastante bien a Chon.',
       tryAgain: 'Caer de nuevo',
@@ -131,7 +126,6 @@ export const translations = {
       follow: 'Si te reíste, seguime.',
     },
     real: {
-      eyebrow: 'El talento',
       title: 'Este es Chon.',
       body: 'Está recuperándose con un cono gigante, una pechera y la seguridad de alguien que acaba de descubrir su valor de mercado.',
       facts: ['Negro, curioso, profesional', 'Disponible para campañas absurdamente específicas'],
@@ -195,7 +189,6 @@ export const translations = {
       'harness-left': { label: 'Left side of the harness', detail: 'The left side of the harness.', spot: 'Harness · left side' },
     },
     ranking: {
-      eyebrow: 'Live ranking',
       title: 'The cone already has favorites.',
       body: 'The brands that arrived first claimed the spots Chon looks at with the least contempt.',
       occupancy: 'Occupancy',
@@ -207,7 +200,6 @@ export const translations = {
       sponsors: { croquetas: 'M · Front of cone', paseo: 'S · Front of harness' },
     },
     how: {
-      eyebrow: 'How it works',
       title: 'Three steps. One cone with its own schedule.',
       body: 'Your brand, a recovering dog, and a business opportunity nobody asked for.',
       steps: [
@@ -217,7 +209,6 @@ export const translations = {
       ],
     },
     sizes: {
-      eyebrow: 'Space menu',
       title: 'Six sizes. Eight spots.',
       body: 'Choose how much attention your brand can handle without overshadowing the cone\'s owner.',
       note: 'Measured precisely. Approved with indifference.',
@@ -225,7 +216,6 @@ export const translations = {
       location: 'Location',
     },
     purchase: {
-      eyebrow: 'Reserve your spot',
       title: 'Design the ad that will accompany Chon.',
       body: 'Four steps to occupy an advertising property with legs.',
       previewLabel: 'Your brand lives here',
@@ -254,7 +244,6 @@ export const translations = {
       stepFourTitle: 'Review and pay',
       stepFourBody: 'Your spot is ready. Chon is waiting for an executive decision.',
       pay: 'Pay with Mercado Pago',
-      successEyebrow: 'You fell for it elegantly',
       successTitle: 'The order never existed.',
       successBody: 'There was no charge, checkout, or data sent anywhere. But your brand looked pretty good on Chon.',
       tryAgain: 'Fall for it again',
@@ -273,7 +262,6 @@ export const translations = {
       follow: 'If you laughed, follow me.',
     },
     real: {
-      eyebrow: 'The talent',
       title: 'This is Chon.',
       body: 'He is recovering with a giant cone, a harness, and the confidence of someone who just discovered his market value.',
       facts: ['Black, curious, professional', 'Available for absurdly specific campaigns'],

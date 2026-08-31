@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="660" viewBox="145 0 610 660" role="img" aria-labelledby="title desc">
+  <title id="title">Broken server rack with fire and electrical arcs</title>
+  <desc id="desc">An upright damaged server rack burns and sparks, with fire on top and a yellow puddle off to its right.</desc>
+
+  <defs>
+    <linearGradient id="rack-face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#343940"/><stop offset="1" stop-color="#202329"/></linearGradient>
+    <linearGradient id="rack-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c1f24"/><stop offset="1" stop-color="#30343a"/></linearGradient>
+    <linearGradient id="fire-outer" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c94127"/><stop offset=".58" stop-color="#ef6e28"/><stop offset="1" stop-color="#ffb52e"/></linearGradient>
+    <linearGradient id="fire-inner" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f47b20"/><stop offset="1" stop-color="#ffe166"/></linearGradient>
+    <radialGradient id="floor-mark"><stop offset="0" stop-color="#f6cc28" stop-opacity=".76"/><stop offset=".72" stop-color="#edbb1c" stop-opacity=".58"/><stop offset="1" stop-color="#d9a512" stop-opacity=".08"/></radialGradient>
+    <filter id="rack-shadow" x="-35%" y="-20%" width="170%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#242321" flood-opacity=".2"/></filter>
+    <filter id="electric-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="fire-glow" x="-60%" y="-60%" width="220%" height="240%"><feGaussianBlur stdDeviation="10" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="rack-opening"><rect x="306" y="130" width="288" height="430" rx="8"/></clipPath>
+  </defs>
+
+  <style>
+    .electric { animation: electric-strike 1.7s steps(1, end) infinite; }
+    .electric--two { animation-delay: -.54s; }
+    .electric--three { animation-delay: -1.08s; }
+    .flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flame-dance .72s cubic-bezier(.45,0,.55,1) infinite alternate; }
+    .flame--slow { animation-duration: .94s; animation-delay: -.38s; }
+    .flame--fast { animation-duration: .58s; animation-delay: -.21s; }
+    .ember { transform-box: fill-box; transform-origin: center; animation: ember-rise 1.45s ease-out infinite; }
+    .ember--two { animation-delay: -.72s; }
+    .ember--three { animation-delay: -1.13s; }
+    .warning { animation: warning-blink 1.15s steps(1, end) infinite; }
+    .warning--fast { animation-duration: .46s; animation-delay: -.17s; }
+    .loose-cable { transform-box: fill-box; transform-origin: top center; animation: cable-sway 1.8s ease-in-out infinite alternate; }
+    @keyframes electric-strike { 0%, 7%, 18%, 22%, 100% { opacity: .16; } 8%, 10%, 19%, 21% { opacity: 1; } 9%, 20% { opacity: .42; } }
+    @keyframes flame-dance { 0% { transform: translate3d(-3px,1px,0) scale(.94,1.02) rotate(-2deg); opacity: .88; } 52% { transform: translate3d(3px,-7px,0) scale(1.04,1.1) rotate(2deg); opacity: 1; } 100% { transform: translate3d(-1px,-3px,0) scale(.98,1.06) rotate(-1deg); opacity: .94; } }
+    @keyframes ember-rise { 0% { transform: translate3d(0,5px,0) scale(.7); opacity: 0; } 22% { opacity: 1; } 100% { transform: translate3d(12px,-62px,0) scale(.2); opacity: 0; } }
+    @keyframes warning-blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: .18; } }
+    @keyframes cable-sway { from { transform: rotate(-2deg); } to { transform: rotate(3deg); } }
+    @media (prefers-reduced-motion: reduce) { .electric, .flame, .ember, .warning, .loose-cable { animation: none; } .electric { opacity: .82; } .ember { opacity: 0; } }
+  </style>
+
+  <rect width="900" height="680" fill="#f5f0e7"/>
+
+  <!-- The yellow puddle sits only on the rack's right side. -->
+  <path d="M505 581c34-10 66 1 81 13 26-5 59 3 71 17 10 12-7 23-35 25-24 3-46-2-60-8-20 10-55 10-76 0-27-12-16-35 19-47z" fill="url(#floor-mark)"/>
+  <path d="M542 596c27-5 66 2 78 14 8 8-6 15-28 16-25 2-54-4-64-13-8-7-1-14 14-17z" fill="#e9b71b" opacity=".3"/>
+
+  <!-- Top fire is behind the cabinet so it appears to burst from the roof. -->
+  <g filter="url(#fire-glow)">
+    <g class="flame flame--slow">
+      <path d="M398 132c-25-29-15-60 7-83 2 21 13 26 20 7 6-18 0-32 13-47 19 25 43 50 35 84-7 28-31 43-75 39z" fill="url(#fire-outer)"/>
+      <path d="M417 129c-12-18-5-37 8-51 2 12 8 15 13 4 4-10 1-19 8-27 12 16 20 32 14 49-5 17-19 25-43 25z" fill="url(#fire-inner)"/>
+    </g>
+    <g class="flame flame--fast">
+      <path d="M470 132c-17-21-8-44 6-58 2 14 9 17 14 5 4-12 1-21 9-31 13 17 28 35 23 58-5 20-21 30-52 26z" fill="url(#fire-outer)"/>
+      <path d="M484 130c-8-13-2-26 6-35 1 9 5 10 9 3 3-8 1-14 5-20 9 11 13 23 9 35-4 11-13 17-29 17z" fill="url(#fire-inner)"/>
+    </g>
+  </g>
+
+  <!-- Upright server rack. Damage is inside the cabinet; the cabinet itself stays straight. -->
+  <g filter="url(#rack-shadow)">
+    <path d="M292 116h316l22 21v430l-22 19H292l-22-19V137z" fill="url(#rack-side)" stroke="#191c20" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="288" y="116" width="324" height="470" rx="14" fill="url(#rack-face)" stroke="#171a1f" stroke-width="8"/>
+    <path d="M306 130h288v430H306z" fill="#171a1f"/>
+    <g clip-path="url(#rack-opening)">
+      <g transform="rotate(-1.8 450 166)">
+        <path d="M314 140h273l8 8-7 53-276-3z" fill="#394941" stroke="#101316" stroke-width="5"/>
+        <path d="M331 153h166l-7 29H327z" fill="#222c28"/>
+        <path d="M510 150l19 38M540 148l-12 40" stroke="#66736d" stroke-width="3" opacity=".7"/>
+        <circle cx="559" cy="170" r="6" fill="#e14f31" class="warning warning--fast"/><circle cx="580" cy="170" r="6" fill="#846e54"/>
+      </g>
+      <path d="M309 210h286v86H309z" fill="#0d1012"/>
+      <path d="M312 210l30 17 34-17 45 13 37-13 50 17 43-17 44 14" fill="none" stroke="#5a3a2d" stroke-width="7"/>
+      <path d="M350 218c9 33-14 49-6 82" fill="none" stroke="#e5b823" stroke-width="5" stroke-linecap="round" class="loose-cable"/>
+      <path d="M382 217c-6 40 24 52 12 94" fill="none" stroke="#b64131" stroke-width="5" stroke-linecap="round" class="loose-cable"/>
+      <path d="M534 216c-17 24 14 48 3 81" fill="none" stroke="#4b7b82" stroke-width="5" stroke-linecap="round" class="loose-cable"/>
+      <path d="M313 311h278l5 10-9 61-273-3-7-13z" fill="#33433d" stroke="#121518" stroke-width="5"/>
+      <path d="M329 329h176l-5 29-174-2z" fill="#202a26"/>
+      <path d="M448 312l-15 23 19 16-20 27" fill="none" stroke="#15191a" stroke-width="7" stroke-linejoin="round"/>
+      <circle cx="556" cy="345" r="6" fill="#e14f31" class="warning"/><circle cx="578" cy="345" r="6" fill="#e14f31" class="warning warning--fast"/>
+      <path d="M310 394h285v64H310z" fill="#283630" stroke="#111416" stroke-width="5"/>
+      <path d="M328 409h160v30H328z" fill="#18221e"/>
+      <path d="M489 394l-18 20 20 14-12 30" fill="#111416"/>
+      <circle cx="556" cy="426" r="6" fill="#d94e32" class="warning warning--fast"/><circle cx="578" cy="426" r="6" fill="#706d64"/>
+      <path d="M309 472h285v82H309z" fill="#2e3d37" stroke="#111416" stroke-width="5"/>
+      <path d="M330 490h170v34H330z" fill="#1b2521"/>
+      <path d="M518 473l26 18 50-4v67h-76z" fill="#15191b"/>
+      <path d="M524 478l22 15 47-3" fill="none" stroke="#69716d" stroke-width="4"/>
+      <circle cx="556" cy="516" r="6" fill="#d94e32" class="warning"/><circle cx="578" cy="516" r="6" fill="#d39b20" class="warning warning--fast"/>
+      <g filter="url(#fire-glow)">
+        <g class="flame flame--slow"><path d="M352 318c-30-36-15-74 12-99 2 27 17 31 24 8 7-23-2-40 13-58 22 31 53 61 43 104-8 36-38 54-92 45z" fill="url(#fire-outer)"/><path d="M374 316c-14-24-4-47 11-64 2 16 11 19 17 5 5-13 1-25 10-35 14 21 22 42 14 64-7 20-24 30-52 30z" fill="url(#fire-inner)"/></g>
+        <g class="flame flame--fast"><path d="M486 458c-25-31-12-64 7-84 3 20 14 24 21 7 7-17 1-30 12-44 20 23 41 50 34 82-7 29-31 44-74 39z" fill="url(#fire-outer)"/><path d="M505 455c-12-20-3-39 9-52 1 13 8 16 13 5 4-11 2-19 8-28 12 16 19 34 13 51-5 17-19 25-43 24z" fill="url(#fire-inner)"/></g>
+      </g>
+    </g>
+    <path d="M288 238l-22 13 22 17M612 432l24 13-24 19" fill="#f5f0e7" stroke="#171a1f" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M314 586v22h58l8-22M586 586v22h-58l-8-22" fill="#171a1f"/>
+  </g>
+
+  <!-- Electrical arcs: brief, irregular flashes around the damaged cabinet. -->
+  <g fill="none" stroke="#f3c727" stroke-linecap="round" stroke-linejoin="round" filter="url(#electric-glow)">
+    <g class="electric" stroke-width="7"><path d="M291 227l-48-28 13 42-51 1 47 31-29 26"/><path d="M273 250l-21-4" stroke="#fff2a3" stroke-width="3"/></g>
+    <g class="electric electric--two" stroke-width="7"><path d="M607 318l55-35-15 42 52 5-49 27 25 31"/><path d="M629 321l26-6" stroke="#fff2a3" stroke-width="3"/></g>
+    <g class="electric electric--three" stroke-width="6"><path d="M401 116l-21-53 38 25 18-49 13 53 37-25-18 49"/><path d="M421 96l8-24" stroke="#fff2a3" stroke-width="3"/></g>
+  </g>
+
+  <g fill="#f2a226"><circle class="ember" cx="364" cy="244" r="5"/><circle class="ember ember--two" cx="407" cy="266" r="4"/><circle class="ember ember--three" cx="520" cy="401" r="5"/></g>
+</svg>
