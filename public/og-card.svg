@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">DOG. FUR. ADS. CONE.</title>
-  <desc id="desc">Chon wears a medical cone with advertising space, surrounded by playful campaign marks.</desc>
+  <desc id="desc">Chon smiles inside his cone beside the Dog Fur Ads Cone campaign line.</desc>
   <defs>
     <clipPath id="dog-crop"><circle cx="895" cy="315" r="225"/></clipPath>
     <filter id="og-shadow" x="-30%" y="-30%" width="160%" height="160%">
@@ -10,7 +10,7 @@
   <rect width="1200" height="630" fill="#f5f0e7"/>
   <path d="M0 546h1200" stroke="#d8cec0" stroke-width="2"/>
   <g fill="#d5673f" font-family="DM Mono, monospace" font-size="18" font-weight="500" letter-spacing="5">
-    <text x="68" y="78">CHON HAS SPACE</text>
+    <text x="68" y="78">YOUR BRAND'S BEST FRIEND</text>
     <text x="68" y="578">CANINE ADVERTISING / ARGENTINA</text>
   </g>
   <g fill="#242321" font-family="Arial Black, Arial, sans-serif" font-size="92" font-weight="900" letter-spacing="-6">
@@ -22,9 +22,8 @@
   <g filter="url(#og-shadow)">
     <circle cx="895" cy="315" r="244" fill="#eee7dc" stroke="#d8cec0" stroke-width="3"/>
     <g clip-path="url(#dog-crop)">
-      <image href="assets/chon-hero-poster.png" xlink:href="assets/chon-hero-poster.png" x="670" y="90" width="450" height="450" preserveAspectRatio="xMidYMid slice"/>
+      <image href="assets/chon-real.png" xlink:href="assets/chon-real.png" x="670" y="90" width="450" height="450" preserveAspectRatio="xMidYMid slice"/>
     </g>
-    <path d="M768 473c50 34 204 34 254 0" fill="none" stroke="#d5673f" stroke-width="11" stroke-linecap="round"/>
   </g>
   <g transform="translate(1030 88)" fill="none" stroke="#d5673f" stroke-width="6" stroke-linecap="round">
     <path d="M0 0l9 23 23 9-23 9-9 23-9-23-23-9 23-9z"/>

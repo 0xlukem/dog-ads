@@ -21,14 +21,15 @@ if (!existsSync(join(distDir, 'index.html'))) {
 } else {
   const outputFiles = walk(distDir)
   const indexText = readFileSync(join(distDir, 'index.html'), 'utf8')
-  const requiredFiles = ['404.html', 'og-card.svg', 'assets/chon-404.svg']
+  const requiredFiles = ['404.html', 'og-card.svg', 'og-chon-cone.png', 'assets/chon-404.svg']
   for (const file of requiredFiles) {
     if (!existsSync(join(distDir, file))) errors.push(`Falta en dist el archivo público requerido: /${file}`)
   }
 
   const requiredMeta = [
     'rel="canonical" href="https://dog-ads.vercel.app/"',
-    'property="og:image" content="https://dog-ads.vercel.app/og-card.svg"',
+    'property="og:image" content="https://dog-ads.vercel.app/og-chon-cone.png"',
+    'property="og:image:type" content="image/png"',
     'property="og:image:width" content="1200"',
     'property="og:image:height" content="630"',
     'name="twitter:card" content="summary_large_image"',
