@@ -166,7 +166,7 @@ function PurchaseFlow({ selectedSpot, setSelectedSpot, selectedSize, setSelected
 
 function ChonReal() {
   const { t } = useLanguage()
-  return <section className="section section--real" id="chon-real"><div className="section-shell real-grid"><div className="real-photo"><img src="/assets/chon-real.png" loading="lazy" width="1316" height="1016" alt={t('real.imageAlt')} /><span className="photo-stamp">{t('real.stamp')}</span></div><div className="real-copy"><h2>{t('real.title')}</h2><p>{t('real.body')}</p><div className="real-facts"><span><PawPrint size={17} /> {t('real.facts')[0]}</span><span><Heart size={17} /> {t('real.facts')[1]}</span></div><Button variant="secondary" onClick={() => scrollToSection('comprar')}>{t('real.cta')} <ArrowRight size={18} /></Button></div></div></section>
+  return <section className="section section--real" id="chon-real"><div className="section-shell real-grid"><div className="real-photo"><img src="/assets/chon-real.png" loading="lazy" width="1316" height="1016" alt={t('real.imageAlt')} /><span className="photo-stamp">{t('real.stamp')}</span></div><div className="real-copy"><h2>{t('real.title')}</h2><p>{t('real.body')}</p><div className="real-facts"><span><PawPrint size={17} /> {t('real.facts')[0]}</span><span><Heart size={17} /> {t('real.facts')[1]}</span></div><a className="button button--secondary" href="/404.html">{t('real.cta')} <ArrowRight size={18} /></a></div></div></section>
 }
 
 function App() {

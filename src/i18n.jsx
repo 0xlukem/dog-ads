@@ -131,7 +131,7 @@ export const translations = {
       facts: ['Negro, curioso, profesional', 'Disponible para campañas absurdamente específicas'],
       imageAlt: 'Chon, perro negro con su cono blanco, descansando después de su operación',
       stamp: 'Hola soy Chon',
-      cta: 'Contratar su cono',
+      cta: 'Hacé clic para acariciarme',
     },
     footer: {
       body: 'Publicidad canina de alto impacto. Literalmente a la altura de un perro.',
@@ -267,7 +267,7 @@ export const translations = {
       facts: ['Black, curious, professional', 'Available for absurdly specific campaigns'],
       imageAlt: 'Chon, a black dog with his white cone, resting after his operation',
       stamp: 'Hi, I am Chon',
-      cta: 'Hire his cone',
+      cta: 'Click to pet me',
     },
     footer: {
       body: 'High-impact canine advertising. Literally at a dog\'s height.',
